@@ -1,0 +1,114 @@
+.about {
+  position: relative;
+  padding: 80px 0;
+  color: #fff;
+  text-align: center;
+  background: 
+    linear-gradient(#212121, rgba(126, 111, 49, 0.089)), 
+    url("/about.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 650px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* ОБО МНЕ */
+.about-title {
+  font-size: 16px;
+  margin-bottom: 49px;
+  margin-top: 0;
+  opacity: 0.9;
+  color: #b2b2b2;
+  position: relative;
+  display: inline-block;
+}
+
+/* круг */
+.about-title::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(142, 133, 125, 0.15);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: box-shadow 0.4s ease;
+}
+
+.about-title:hover::before {
+  box-shadow: 0 0 20px #5edec7;
+}
+
+/* бегущая строка */
+.about-typing {
+  margin-bottom: 15px;
+  min-height: 80px; 
+  font-family: 'Misto', sans-serif;
+}
+
+
+.about-typing h3 {
+  font-size: 32px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  display: inline-block;
+}
+
+/* полоска */
+.about-typing h3::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 2px;
+  margin: 8px auto 0;
+  background: #666d6b; 
+  opacity: 0.8;
+}
+
+/* контент */
+.about-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  max-width: 700px; 
+  min-height: 250px; 
+  text-align: left;
+  font-family: 'Misto', sans-serif;
+}
+
+.about-text p {
+  margin-bottom: 25px;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+/* кружок */
+.about-title::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(24, 23, 21, 0.15);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: box-shadow 1.2s ease, opacity 1.2s ease; 
+  opacity: 0.5; 
+}
+
+.about-title.active::before {
+  box-shadow: 0 0 10px #5ec4de;
+  opacity: 1;
+}

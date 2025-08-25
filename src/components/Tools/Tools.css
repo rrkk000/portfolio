@@ -1,0 +1,101 @@
+/* src/components/Tools/Tools.css */
+.tools {
+  position: relative;
+  padding: 100px 0;
+  text-align: center;
+  background: linear-gradient(135deg, #1c1c1c 0%, #0b0b0b 100%);
+  color: #fff;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Маленький текст "Инструменты" */
+.tools-small {
+  font-size: 16px;
+  z-index: 2;
+  position: relative;
+  margin-bottom: 40px; 
+  display: inline-block;
+  color: #b2b2b2;;
+}
+
+/* Кружок за текстом (аналог как в "Обо мне") */
+.tools-small::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(24, 23, 21, 0.15);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: box-shadow 1.2s ease, opacity 1.2s ease;
+  opacity: 0.5;
+}
+
+/* при наведении */
+.tools-small:hover::before {
+  box-shadow: 0 0 20px #5edec7;
+  opacity: 1;
+}
+
+/* можно активировать через JS (как в "about") */
+.tools-small.active::before {
+  box-shadow: 0 0 10px #5ec4de;
+  opacity: 1;
+}
+
+/* Заголовок "Стек технологий" */
+.tools-header {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  z-index: 2;
+  position: relative;
+}
+
+/* Полоска под заголовком */
+.tools-header::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #666; /* серенькая */
+  margin: 12px auto 30px; /* автоцентр */
+  border-radius: 2px;
+}
+
+/* Карточки технологий */
+.tool-card {
+  padding: 12px 20px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08); /* вместо зелёного — нейтральный */
+  color: #e0e0e0;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: default;
+  transition: box-shadow 0.3s ease, transform 0.3s ease, background 0.3s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Список технологий */
+.tools-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}

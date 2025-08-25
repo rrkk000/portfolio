@@ -1,0 +1,79 @@
+@import url('https://api.fontshare.com/v2/css?f[]=roxborough-cf@700&display=swap');
+
+body {
+  margin: 0; 
+  padding-top: 70px;
+}
+
+.header {
+  width: 100%;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  background-color: #1c1c1c;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 100;
+}
+
+.header-container {
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: 'Roxborough CF', serif;
+  color: white;
+  letter-spacing: 4px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 100px; 
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  position: relative; 
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+/* линия */
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: #5edec7;
+  box-shadow: 
+    0 0 1px #5edec7,
+    0 0 90px #5edec7; 
+  transition: width 0.4s ease; 
+}
+
+/* эффект при наведении */
+.nav a:hover {
+  color: #5edec7;
+  text-shadow: 
+    0 0 9px #5edec7,
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+

@@ -1,0 +1,39 @@
+.socials-sidebar {
+  position: fixed;
+  left: 35px; 
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 200;
+}
+
+.socials-sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 23px; 
+}
+
+.socials-sidebar a {
+  color: #bdbdbd81;
+  font-size: 27px; 
+  display: inline-block; /* чтобы transform сработал */
+  transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.socials-sidebar a:hover {
+  transform: scale(1.2); /* увеличиваем при наведении */
+  color: #5edec7;
+  text-shadow: 0 0 1px #5edec7, 0 0 90px #5edec7;
+}
+
+
+.socials-sidebar .line {
+  margin-top: 25px;
+  width: 2px;
+  height: 150px;
+  background-color: #71717181;
+}

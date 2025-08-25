@@ -1,0 +1,15 @@
+footer {
+  background: #111110; 
+  color: rgb(169, 169, 169);
+  padding: 40px 20px; 
+}
+
+.footer-container {
+  max-width: 1380px; 
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  flex-wrap: wrap; 
+  font-size: 14PX;
+}

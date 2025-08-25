@@ -1,0 +1,14 @@
+
+html, body {
+  overflow-x: hidden; /* запрещаем горизонтальный скролл */
+  scroll-behavior: smooth;
+}
+
+section {
+scroll-margin-top: 80px;
+}
+
+* {
+  box-sizing: border-box;
+  max-width: 100%; /* любое содержимое не шире экрана */
+}
