@@ -24,7 +24,7 @@ function BookMe() {
         </div>
 
         <div className="project-gallery">
-          <img src="/bookme-maket.png" alt="BookMe — макет Figma" />
+          <img src="bookme-maket.png" alt="BookMe — макет Figma" />
         </div>
 
         <div className="project-features">

@@ -36,9 +36,9 @@ function App() {
               </>
             }
           />
-          <Route path="/projects/tastygo" element={<TastyGo />} />
-          <Route path="/projects/mindpath" element={<Mindpath />} />
-          <Route path="/projects/landing" element={<Landing/>} />
+          <Route path="/tastygo" element={<TastyGo />} />
+          <Route path="/mindpath" element={<Mindpath />} />
+          <Route path="/landing" element={<Landing />} />
         </Routes>
 
         <Footer />

@@ -20,7 +20,7 @@ function TastyGo() {
         </div>
 
         <div className="project-gallery">
-          <img src="/tastygo-mockup.png" alt="TastyGo — макет сайта" />
+          <img src="tastygo-mockup.png" alt="TastyGo — макет сайта" />
         </div>
 
         <div className="project-features">

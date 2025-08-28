@@ -2,9 +2,9 @@ import React, { useRef, useState, useEffect } from "react";
 import "./Portfolio.css";
 
 const items = [
-  { id: 1, title: "TastyGo — Доставка еды", img: "tastygo.png", link: "/projects/tastygo" },
-  { id: 2, title: "Mindpath", img: "mindpath.png", link: "/projects/mindpath" },
-  { id: 3, title: "Bookme", img: "bookme.png", link: "/projects/Landing" },
+  { id: 1, title: "TastyGo — Доставка еды", img: "tastygo.png", link: "#/tastygo" },
+  { id: 2, title: "Mindpath", img: "mindpath.png", link: "#/mindpath" },
+  { id: 3, title: "Bookme", img: "bookme.png", link: "#/landing" },
 ];
 
 function Portfolio() {
@@ -37,7 +37,10 @@ function Portfolio() {
         <div className="grid">
           {items.map(p => (
             <a className="card" key={p.id} href={p.link}>
-              <div className="thumb" style={{ backgroundImage: `url(${p.img})` }}></div>
+              <div
+                className="thumb"
+                style={{ backgroundImage: `url(${p.img})` }}
+              ></div>
               <div className="card-footer">{p.title}</div>
             </a>
           ))}

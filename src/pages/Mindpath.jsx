@@ -23,11 +23,11 @@ function Mindpath() {
 
         <div className="project-gallery two-screens">
           <div className="screen">
-            <img src="/mindpath-overview.png" alt="Mindpath — общий вид сайта" />
+            <img src="mindpath-overview.png" alt="Mindpath — общий вид сайта" />
             <p className="screen-desc">Общий вид сайта</p>
           </div>
           <div className="screen">
-            <img src="/mindpath-panel.png" alt="Mindpath — панель создания задач" />
+            <img src="mindpath-panel.png" alt="Mindpath — панель создания задач" />
             <p className="screen-desc">Панель создания задач</p>
           </div>
         </div>
