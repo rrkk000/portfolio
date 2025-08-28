@@ -5,7 +5,7 @@
   text-align: center;
   background: 
     linear-gradient(#212121, rgba(126, 111, 49, 0.089)), 
-    url("about.jpg") no-repeat center center;
+    url("/about.jpg") no-repeat center center;
   background-size: cover;
   min-height: 650px; 
   display: flex;
