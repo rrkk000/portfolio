@@ -7,7 +7,7 @@ function SocialSidebar() {
     <div className="socials-sidebar">
       <ul>
         <li>
-          <a href="/RESUME.pdf" target="_blank" rel="noreferrer">
+          <a href="RESUME.pdf" target="_blank" rel="noreferrer">
             <FaFileAlt />
           </a>
         </li>
