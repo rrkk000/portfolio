@@ -70,7 +70,7 @@ body {
 .nav a:hover {
   color: #5edec7;
   text-shadow: 
-    0 0 9px #5edec7,
+    0 0 9px #5edec7;
 }
 
 .nav a:hover::after {

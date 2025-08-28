@@ -47,7 +47,7 @@ function Mindpath() {
           Второй мой учебный проект, где я закрепила навыки работы с React, состояниями, компонентами и localStorage.
         </p>
 
-        <a className="project-back" href="/#projects">← Вернуться к проектам</a>
+        <a className="project-back" href="/">← Вернуться к проектам</a>
       </div>
     </section>
   );
