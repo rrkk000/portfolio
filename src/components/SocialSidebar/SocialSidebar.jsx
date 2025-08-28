@@ -21,7 +21,7 @@ function SocialSidebar() {
           </a>
         </li>
         <li>
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a href="https://t.me/pemceoomqc" target="_blank" rel="noreferrer">
             <FaTelegramPlane />
           </a>
         </li>

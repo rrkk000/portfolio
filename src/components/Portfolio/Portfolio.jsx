@@ -4,7 +4,7 @@ import "./Portfolio.css";
 const items = [
   { id: 1, title: "TastyGo — Доставка еды", img: "tastygo.png", link: "/projects/tastygo" },
   { id: 2, title: "Mindpath", img: "mindpath.png", link: "/projects/mindpath" },
-  { id: 3, title: "Landing Concept", img: "bookme.png", link: "/projects/landing" },
+  { id: 3, title: "Bookme", img: "bookme.png", link: "/projects/Landing" },
 ];
 
 function Portfolio() {

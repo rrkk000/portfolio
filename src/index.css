@@ -1,6 +1,6 @@
 
 html, body {
-  overflow-x: hidden; /* запрещаем горизонтальный скролл */
+  overflow-x: hidden; 
   scroll-behavior: smooth;
 }
 
@@ -10,5 +10,5 @@ scroll-margin-top: 80px;
 
 * {
   box-sizing: border-box;
-  max-width: 100%; /* любое содержимое не шире экрана */
+  max-width: 100%; 
 }

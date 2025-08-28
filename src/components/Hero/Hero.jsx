@@ -6,7 +6,7 @@ function Hero() {
     const circles = document.querySelectorAll(".circle");
 
     function randomGlow() {
-      const count = Math.floor(Math.random() * 3) + 1; // 1-3 кружка
+      const count = Math.floor(Math.random() * 3) + 1; 
       circles.forEach(c => c.classList.remove("active"));
 
       for (let i = 0; i < count; i++) {
@@ -15,7 +15,7 @@ function Hero() {
       }
     }
 
-    const interval = setInterval(randomGlow, 1200); // каждые 1.2 сек
+    const interval = setInterval(randomGlow, 1200); 
     return () => clearInterval(interval);
   }, []);
 

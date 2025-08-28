@@ -18,14 +18,14 @@
 }
 
 .socials-sidebar a {
-  color: #bdbdbd81;
+  color: #bdbdbdb6;
   font-size: 27px; 
-  display: inline-block; /* чтобы transform сработал */
+  display: inline-block;
   transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .socials-sidebar a:hover {
-  transform: scale(1.2); /* увеличиваем при наведении */
+  transform: scale(1.2); 
   color: #5edec7;
   text-shadow: 0 0 1px #5edec7, 0 0 90px #5edec7;
 }

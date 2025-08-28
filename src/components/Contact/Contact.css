@@ -8,18 +8,17 @@
   background-size: cover;
 }
 
-/* Заголовок */
+/* заголовок */
 .section-title {
   font-size: 16px;
   color: #b2b2b2;
   display: inline-block;
-  position: relative; /* обязательно */
+  position: relative; 
   margin-bottom: 30px;
-  z-index: 2; /* текст поверх кружка */
+  z-index: 2;
 }
 
-/* Кружок позади текста */
-.section-title .glow-circle {
+.section-title::before {
   content: "";
   position: absolute;
   width: 50px;
@@ -29,18 +28,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: -1; /* позади текста */
-  transition: box-shadow 1.2s ease, opacity 1.2s ease;
-  opacity: 0.5;
-}
-
-/* Кружок загорается только при попадании в поле зрения */
-.section-title.active .glow-circle {
-  box-shadow: 0 0 15px #5ec4de;
+  z-index: -1; 
+  box-shadow: 0 0 15px #5ec4de; 
   opacity: 1;
+  transition: box-shadow 1.2s ease, opacity 1.2s ease;
 }
-
-/* Подзаголовок */
+/* подзаголовок */
 .section-subtitle {
   font-size: 32px;
   font-weight: 700;
@@ -50,7 +43,6 @@
   z-index: 2;
 }
 
-/* Серенькая полоска под подзаголовком */
 .section-subtitle::after {
   content: "";
   display: block;
@@ -61,7 +53,7 @@
   border-radius: 2px;
 }
 
-/* Иконки соцсетей */
+
 .contact-icons {
   display: flex;
   justify-content: center;

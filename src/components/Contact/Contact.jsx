@@ -36,7 +36,7 @@ function Contacts() {
         </div>
 
         <div className="contact-icons">
-          <a href="https://t.me/yourusername" target="_blank" rel="noreferrer">
+          <a href="https://t.me/pemceoomqc" target="_blank" rel="noreferrer">
             <FaTelegramPlane />
           </a>
           <a href="https://github.com/rrkk000" target="_blank" rel="noreferrer">

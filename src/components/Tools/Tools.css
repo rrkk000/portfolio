@@ -1,4 +1,3 @@
-/* src/components/Tools/Tools.css */
 .tools {
   position: relative;
   padding: 100px 0;
@@ -13,9 +12,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 2;
 }
 
-/* Маленький текст "Инструменты" */
 .tools-small {
   font-size: 16px;
   z-index: 2;
@@ -25,7 +24,6 @@
   color: #b2b2b2;;
 }
 
-/* Кружок за текстом (аналог как в "Обо мне") */
 .tools-small::before {
   content: "";
   position: absolute;
@@ -41,19 +39,16 @@
   opacity: 0.5;
 }
 
-/* при наведении */
 .tools-small:hover::before {
   box-shadow: 0 0 20px #5edec7;
   opacity: 1;
 }
 
-/* можно активировать через JS (как в "about") */
 .tools-small.active::before {
   box-shadow: 0 0 10px #5ec4de;
   opacity: 1;
 }
 
-/* Заголовок "Стек технологий" */
 .tools-header {
   font-size: 32px;
   font-weight: bold;
@@ -62,22 +57,33 @@
   position: relative;
 }
 
-/* Полоска под заголовком */
 .tools-header::after {
   content: "";
   display: block;
   width: 60px;
   height: 3px;
-  background: #666; /* серенькая */
-  margin: 12px auto 30px; /* автоцентр */
+  background: #666; 
+  margin: 12px auto 30px; 
   border-radius: 2px;
 }
 
-/* Карточки технологий */
+/* список технологий */
+.tools-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  z-index: 2;
+}
+
 .tool-card {
   padding: 12px 20px;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.08); /* вместо зелёного — нейтральный */
+  background: rgba(255, 255, 255, 0.08);
   color: #e0e0e0;
   font-weight: 500;
   font-size: 16px;
@@ -89,13 +95,65 @@
   transform: translateY(-5px);
 }
 
-/* Список технологий */
-.tools-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-  list-style: none;
+/* кружочки */
+.tools::before,
+.tools::after,
+.tools .circle1,
+.tools .circle2,
+.tools .circle3 {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: floatCircle 8s infinite ease-in-out;
+}
+
+.tools::before {
+  width: 120px;
+  height: 120px;
+  background: rgba(93, 83, 90, 0.708);
+  top: 20%;
+  left: 10%;
+  animation-duration: 12s;
+}
+
+.tools::after {
+  width: 80px;
+  height: 80px;
+  background: rgba(170, 155, 222, 0.4);
+  top: 80%;
+  right: 10%;
+  animation-duration: 15s;
+}
+
+.tools .circle1 {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 105, 180, 0.4);
+  top: 30%;
+  left: 70%;
+  animation-duration: 10s;
+}
+
+.tools .circle2 {
+  width: 30px;
+  height: 30px;
+  background: rgba(185, 180, 215, 0.658);
+  top: 70%;
+  left: 40%;
+  animation-duration: 13s;
+}
+
+.tools .circle3 {
+  width: 60px;
+  height: 60px;
+  background: rgba(141, 122, 134, 0.459);
+  top: 110%;
+  right: 50%;
+  animation-duration: 14s;
+}
+
+@keyframes floatCircle {
+  0%, 100% { transform: translateY(0) scale(1); opacity: 0.6; }
+  50% { transform: translateY(-20px) scale(1.1); opacity: 0.8; }
 }

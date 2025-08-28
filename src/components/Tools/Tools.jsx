@@ -1,10 +1,9 @@
-// src/components/Tools/Tools.jsx
 import React, { useEffect, useRef } from "react";
 import "./Tools.css";
 
 const stack = [
-  "HTML5", "CSS3", "Sass", "JavaScript", "React", "Vite",
-  "Git/GitHub", "Figma", "npm",
+  "HTML5", "CSS3", "JavaScript", "React", "Vite",
+  "Git/GitHub", "Figma", "Grid",
 ];
 
 function Tools() {
@@ -42,6 +41,10 @@ function Tools() {
             <li key={tech} className="tool-card">{tech}</li>
           ))}
         </ul>
+
+        <div className="circle1"></div>
+        <div className="circle2"></div>
+        <div className="circle3"></div>
       </div>
     </section>
   );

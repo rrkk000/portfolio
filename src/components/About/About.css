@@ -24,25 +24,6 @@
   display: inline-block;
 }
 
-/* круг */
-.about-title::before {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: rgba(142, 133, 125, 0.15);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-  transition: box-shadow 0.4s ease;
-}
-
-.about-title:hover::before {
-  box-shadow: 0 0 20px #5edec7;
-}
-
 /* бегущая строка */
 .about-typing {
   margin-bottom: 15px;
