@@ -3,7 +3,7 @@ import "./Tools.css";
 
 const stack = [
   "HTML5", "CSS3", "JavaScript", "React", "Vite",
-  "Git/GitHub", "Figma", "Grid",
+  "Git/GitHub", "Figma", "Tilda", "Grid",
 ];
 
 function Tools() {
