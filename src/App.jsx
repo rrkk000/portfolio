@@ -14,6 +14,7 @@ import Footer from "./components/Footer/Footer";
 import TastyGo from "./pages/TastyGo";
 import Mindpath from "./pages/Mindpath";
 import Landing from "./pages/Landing";
+import TestProject from "./pages/TestProject";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
           <Route path="/tastygo" element={<TastyGo />} />
           <Route path="/mindpath" element={<Mindpath />} />
           <Route path="/landing" element={<Landing />} />
+          <Route path="/testproject" element={<TestProject />} />
         </Routes>
 
         <Footer />

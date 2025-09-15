@@ -5,6 +5,7 @@ const items = [
   { id: 1, title: "TastyGo — Доставка еды", img: "tastygo.png", link: "#/tastygo" },
   { id: 2, title: "Mindpath", img: "mindpath.png", link: "#/mindpath" },
   { id: 3, title: "Bookme", img: "bookme.png", link: "#/landing" },
+  { id: 4, title: "TestProject", img: "testproject.png", link: "#/testproject" },
 ];
 
 function Portfolio() {
